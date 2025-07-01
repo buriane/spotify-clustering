@@ -1,5 +1,5 @@
 @echo off
-echo Launching Spotify User Clustering & Analysis App...
+echo Meluncurkan Aplikasi Analisis dan Clustering Pengguna Spotify...
 echo.
 
 REM Check if Python is installed

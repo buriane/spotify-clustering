@@ -1,5 +1,5 @@
-# Spotify User Clustering & Analysis App Launcher
-Write-Host "Launching Spotify User Clustering & Analysis App..." -ForegroundColor Green
+# Aplikasi Analisis dan Clustering Pengguna Spotify Launcher
+Write-Host "Meluncurkan Aplikasi Analisis dan Clustering Pengguna Spotify..." -ForegroundColor Green
 Write-Host ""
 
 # Check if Python is installed

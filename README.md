@@ -1,14 +1,15 @@
-# Spotify User Clustering & Analysis App
+# Analisis dan Clustering Pengguna Spotify
 
-This Streamlit application performs cluster analysis on Spotify usage data to identify user segments and discover patterns in music preferences.
+Aplikasi Streamlit ini melakukan analisis clustering pada data penggunaan Spotify untuk mengidentifikasi segmen pengguna dan menemukan pola dalam preferensi musik.
 
-## Features
+## Fitur
 
-- Upload and analyze your own Spotify usage data (CSV format)
-- Visualize user segmentation with K-means clustering
-- Apply Principal Component Analysis (PCA) for dimensionality reduction
-- Generate association rules to discover relationships between music genres
-- Interactive visualizations and detailed insights
+- Unggah dan analisis data penggunaan Spotify Anda (format CSV)
+- Visualisasikan segmentasi pengguna dengan clustering K-means
+- Terapkan Principal Component Analysis (PCA) untuk reduksi dimensi
+- Hasilkan aturan asosiasi untuk menemukan hubungan antara genre musik
+- Visualisasi interaktif dan wawasan mendetail
+- Unduh dataset contoh atau dataset yang dihasilkan secara acak
 
 ## Getting Started
 
@@ -58,6 +59,36 @@ Your CSV file should contain the following columns:
 - `Total_Lagu_Harian`: Average number of songs played daily
 - `Genre_Sering_Didengarkan`: Comma-separated list of frequently listened genres
 
-## License
+## Deployment ke Streamlit Cloud
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Aplikasi ini siap untuk di-deploy ke Streamlit Cloud dengan langkah-langkah berikut:
+
+1. Buat akun di [Streamlit Cloud](https://streamlit.io/cloud)
+2. Hubungkan dengan repositori GitHub Anda yang berisi aplikasi ini
+3. Konfigurasi deployment:
+   - Set file utama sebagai `app.py`
+   - Tentukan versi Python (3.10 direkomendasikan)
+   - Pastikan semua persyaratan dependensi ada dalam `requirements.txt`
+
+### File Konfigurasi
+
+Aplikasi ini menggunakan file konfigurasi berikut untuk deployment:
+
+1. `.streamlit/config.toml` - Berisi konfigurasi tema dan pengaturan server
+2. `.streamlit/secrets.toml` - Berisi kredensial dan konfigurasi sensitif (tidak dicommit ke repository)
+3. `runtime.txt` - Menentukan versi Python yang digunakan
+
+### Secrets Management
+
+Jika aplikasi perlu mengakses layanan eksternal atau database:
+
+1. Tambahkan kredensial yang diperlukan ke `.streamlit/secrets.toml` secara lokal
+2. Tambahkan secrets yang sama melalui dashboard Streamlit Cloud (Advanced Settings > Secrets)
+
+### Custom Domain
+
+Untuk menggunakan domain kustom (contoh: spotifycluster.id):
+
+1. Daftarkan domain yang diinginkan melalui registrar domain
+2. Konfigurasikan domain di dashboard Streamlit Cloud
+3. Ikuti instruksi untuk menyiapkan DNS dan SSL
