@@ -13,6 +13,16 @@ import io
 import base64
 import warnings
 import os.path
+
+# Cek apakah ada secrets dan log informasi deployment (hanya untuk referensi, tidak menampilkan nilai sensitif)
+if hasattr(st, 'secrets') and 'some_section' in st.secrets:
+    deployment_mode = "cloud"
+    # Hanya log bahwa secrets tersedia, jangan tampilkan nilai sebenarnya
+    print("Secrets tersedia: DB credentials and some_section")
+else:
+    deployment_mode = "local"
+    print("Running in local mode, no secrets available")
+
 warnings.filterwarnings('ignore')
 
 # Set page configuration

@@ -2,10 +2,15 @@
 Write-Host "Meluncurkan Aplikasi Analisis dan Clustering Pengguna Spotify..." -ForegroundColor Green
 Write-Host ""
 
-# Check if Python is installed
+# Check if Python is installed (versi 3.13 direkomendasikan)
 try {
     $pythonVersion = python --version
     Write-Host "Found $pythonVersion" -ForegroundColor Cyan
+    
+    # Verifikasi versi Python
+    if (-not ($pythonVersion -like "*3.13*")) {
+        Write-Host "Peringatan: Aplikasi ini dioptimalkan untuk Python 3.13" -ForegroundColor Yellow
+    }
 }
 catch {
     Write-Host "Python is not installed or not found in PATH." -ForegroundColor Red

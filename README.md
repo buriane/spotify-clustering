@@ -67,7 +67,7 @@ Aplikasi ini siap untuk di-deploy ke Streamlit Cloud dengan langkah-langkah beri
 2. Hubungkan dengan repositori GitHub Anda yang berisi aplikasi ini
 3. Konfigurasi deployment:
    - Set file utama sebagai `app.py`
-   - Tentukan versi Python (3.10 direkomendasikan)
+   - Tentukan versi Python (3.13)
    - Pastikan semua persyaratan dependensi ada dalam `requirements.txt`
 
 ### File Konfigurasi
