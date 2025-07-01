@@ -1,9 +1,20 @@
 [theme]
-primaryColor="#1DB954"  # Spotify green
-backgroundColor="#191414"  # Spotify black
-secondaryBackgroundColor="#535353"  # Spotify dark gray
-textColor="#FFFFFF"  # White text
+primaryColor="#1DB954"
+backgroundColor="#191414"
+secondaryBackgroundColor="#535353"
+textColor="#FFFFFF"
 font="sans serif"
 
 [server]
 maxUploadSize=50
+enableStaticServing=true
+enableCORS=false
+
+[browser]
+gatherUsageStats=false
+
+[runner]
+fastReruns=true
+
+[global]
+developmentMode=false
