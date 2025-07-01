@@ -1,0 +1,9 @@
+[theme]
+primaryColor="#1DB954"  # Spotify green
+backgroundColor="#191414"  # Spotify black
+secondaryBackgroundColor="#535353"  # Spotify dark gray
+textColor="#FFFFFF"  # White text
+font="sans serif"
+
+[server]
+maxUploadSize=50
